@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Movimento from './components/Movimento';
-import Teste from './components/Teste';
+import Pedometro from './components/Pedometro';
 import { Ionicons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
@@ -22,7 +22,7 @@ export default function App() {
                       )
                     }}
         />
-        <Tab.Screen name="Contador de Passos" component={Teste}
+        <Tab.Screen name="Contador de Passos" component={Pedometro}
                     options={{
                       tabBarIcon: ({ color, size }) => (
                         <Ionicons
